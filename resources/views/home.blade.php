@@ -199,9 +199,15 @@
                         <i class="fas fa-cog"></i> Admin Panel
                     </a>
                     @else
-                    <a href="{{ route('login') }}" class="btn btn-outline-primary">
+                    <div class="d-flex ms-auto ">
+                        <a href="{{ route('login') }}" class="btn btn-outline-primary ">
                         <i class="fas fa-sign-in-alt"></i> Login
                     </a>
+                    <a href="{{ route('register') }}" class="btn btn-outline-primary mx-2">
+                        <i class="fas fa-sign-in-alt"></i> Register
+                    </a>
+                    </div>
+
                     @endauth
                     <a href="{{ route('cart.index') }}" class="btn btn-warning position-relative">
                         <i class="fas fa-shopping-cart"></i> Cart
